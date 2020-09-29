@@ -24,7 +24,7 @@ public class HereoForm extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				HereoForm.this.setVisible(false);
 			}
-		});
+		}, "Atras");
 		
 		
 		

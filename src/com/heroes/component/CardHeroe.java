@@ -14,7 +14,7 @@ import com.heroes.dominio.Heroe;
 
 public class CardHeroe extends JPanel {
 	
-	public CardHeroe(Heroe h, ActionListener action) {
+	public CardHeroe(Heroe h, ActionListener action, String msgButton) {
 		this.setLayout(null);
 		
 		Image img = new ImageIcon("heroes/" + h.getId() + ".jpg").getImage().getScaledInstance(140, 180, Image.SCALE_SMOOTH);
@@ -39,7 +39,7 @@ public class CardHeroe extends JPanel {
 		superhero.setBounds(150, 60, 80, 25);
 		this.add(superhero);
 		
-		JButton mostrarDetalleButton = new JButton("Mas...");
+		JButton mostrarDetalleButton = new JButton(msgButton);
 		mostrarDetalleButton.addActionListener(action);
 		mostrarDetalleButton.setBounds(150, 80, 80, 25);
 		

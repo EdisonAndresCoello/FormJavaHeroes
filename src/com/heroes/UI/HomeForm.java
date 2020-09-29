@@ -30,7 +30,7 @@ public class HomeForm extends JFrame {
 					form.setVisible(true);
 					
 				}
-			});
+			}, "Mas..");
 			getContentPane().add(jPanel);
 		}
 		
